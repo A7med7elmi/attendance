@@ -54,7 +54,7 @@
                                     <th class="hidden"></th>
                                     <th>Date</th>
                                     <th>Employee ID</th>
-                                    <th>Username</th>
+                               
                                     <th>Name</th>
                                     <th>Time In</th>
                                     <th>Time Out</th>
@@ -86,7 +86,6 @@
                                                 <td class='hidden'></td>
                                                 <td>" . date('M d, Y', strtotime($row['date'])) . "</td>
                                                 <td>" . $row['id'] . "</td>
-                                                <td>" . $row['theusername'] . "</td>
                                                 <td>" . $row['firstname'] . ' ' . $row['lastname'] . "</td>
                                                 <td>" . date('h:i A', strtotime($row['time_in'])) . $status . "</td>
                                                 <td>" . $time_out . "</td>
