@@ -51,7 +51,7 @@
               <table id="example1" class="table table-bordered">
                 <thead>
                   <th>Employee ID</th>
-                  <th>Username</th>
+                  
                   <th>Name</th>
                   <th>Deduction</th>
                   <th>Amount</th>
@@ -69,7 +69,7 @@
                       ?>
                         <tr>
                           <td><?php echo $row['empid']; ?></td>
-                          <td><?php echo $row['theusername']; ?></td>
+                    
                           <td><?php echo $row['firstname'].' '.$row['lastname']; ?></td>
                           <td><?php echo $row['description']; ?></td>
                           <td><?php echo $row['dedAmount']; ?></td>
@@ -117,7 +117,6 @@ function getRow(id){
       $('#employee_name').html(response.firstname+' '+response.lastname);
       $('#edit_firstname').val(response.firstname);
       $('#edit_lastname').val(response.lastname);
-      $('#edit_theusername').val(response.theusername);
       $('#edit_address').val(response.address);
       $('#datepicker_edit').val(response.birthdate);
       $('#edit_contact').val(response.contact_info);

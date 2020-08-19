@@ -55,7 +55,7 @@
                                     <th class="hidden"></th>
                                     <th>Date</th>
                                     <th>Employee ID</th>
-                                    <th>Username</th>
+                                
                                     <th>Name</th>
                                     <th>Amount</th>
                                     <th>Monthly Deduction</th>
@@ -71,7 +71,7 @@
                           <td class='hidden'></td>
                           <td>" . date('M d, Y', strtotime($row['date_advance'])) . "</td>
                           <td>" . $row['id'] . "</td>
-                          <td>" . $row['theusername'] . "</td>
+                    
                           <td>" . $row['firstname'] . ' ' . $row['lastname'] . "</td>
                           <td>" . number_format($row['amount'], 2) . "</td>
                           <td>" . number_format($row['deduction'], 2) . "</td>

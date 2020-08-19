@@ -50,12 +50,7 @@
                     </div>
                     <div class="modal-body">
                         <form class="form-horizontal" method="POST" action="profile_update.php?return=<?php echo basename($_SERVER['PHP_SELF']); ?>" enctype="multipart/form-data">
-                            <div class="form-group">
-                                <label for="username" class="col-sm-3 control-label">Username</label>
-                                <div>
-                                    <label class="col-sm-2 control-label" style="color:brown; text-align: left;"><?php echo $user['theusername']; ?></label>
-                                </div>
-                            </div>
+
                             <div class="form-group">
                                 <label for="firstname" class="col-sm-3 control-label">Firstname</label>
                                 <div>

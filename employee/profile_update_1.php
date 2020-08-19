@@ -27,7 +27,7 @@ if (isset($_POST['save'])) {
     }
     $password = password_hash($password, PASSWORD_DEFAULT);
 
-    $sql = "UPDATE employees SET theusername = '$username', thepassword = '$password', "
+    $sql = "UPDATE employees SET  password = '$password', "
             . "gender = '$gender', position_id = '$position', schedule_id = '$schedule', "
             . "address = '$address', birthdate = '$birthdate', contact_info = '$contact', "
             . "firstname = '$firstname', lastname = '$lastname', photo = '$filename' "
