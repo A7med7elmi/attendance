@@ -54,7 +54,7 @@
                                     <thead>
                                     <th class="hidden"></th>
                                     <th>Date</th>
-                                    <th>Employee ID</th>
+                                    <th>Employee Code</th>
                                 
                                     <th>Name</th>
                                     <th>Amount</th>
@@ -70,7 +70,7 @@
                         <tr>
                           <td class='hidden'></td>
                           <td>" . date('M d, Y', strtotime($row['date_advance'])) . "</td>
-                          <td>" . $row['id'] . "</td>
+                          <td>" . $row['employee_id'] . "</td>
                     
                           <td>" . $row['firstname'] . ' ' . $row['lastname'] . "</td>
                           <td>" . number_format($row['amount'], 2) . "</td>
