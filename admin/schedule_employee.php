@@ -54,7 +54,6 @@
                 <thead>
                   <th>Employee ID</th>
                   <th>Name</th>
-                  <th>Username</th>
                   <th>Schedule</th>
                   <th>Tools</th>
                 </thead>
@@ -67,7 +66,6 @@
                         <tr>
                           <td>".$row['empid']."</td>
                           <td>".$row['firstname'].' '.$row['lastname']."</td>
-                          <td>".$row['theusername']."</td>
                           <td>".date('h:i A', strtotime($row['time_in'])).' - '.date('h:i A', strtotime($row['time_out']))."</td>
                           <td>
                             <button class='btn btn-success btn-sm edit btn-flat' data-id='".$row['empid']."'><i class='fa fa-edit'></i> Edit</button>

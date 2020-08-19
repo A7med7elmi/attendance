@@ -145,13 +145,6 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="edit_theusername" class="col-sm-3 control-label">Username</label>
-
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="edit_theusername" name="theusername" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
                         <label for="edit_thepassword" class="col-sm-3 control-label">Password</label>
 
                         <div class="col-sm-9">
