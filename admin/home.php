@@ -102,7 +102,7 @@ if (isset($_GET['year'])) {
                     <!-- ./col -->
                     <div class="col-lg-3 col-xs-6">
                         <!-- small box -->
-                        <div class="small-box bg-yellow">
+                        <div class="small-box bg-purple">
                             <div class="inner">
                                 <?php
                                 $sql = "SELECT * FROM attendance WHERE date = '$today' AND status = 1";
@@ -122,7 +122,7 @@ if (isset($_GET['year'])) {
                     <!-- ./col -->
                     <div class="col-lg-3 col-xs-6">
                         <!-- small box -->
-                        <div class="small-box bg-red">
+                        <div class="small-box bg-blue">
                             <div class="inner">
                                 <?php
                                 $sql = "SELECT * FROM attendance WHERE date = '$today' AND status = 0";
