@@ -16,7 +16,7 @@ if (isset($_SESSION['employee'])) {
 
             <form action="login.php" method="POST">
                 <div class="form-group has-feedback">
-                    <input type="text" class="form-control" name="username" placeholder="input Username" required autofocus>
+                    <input type="text" class="form-control" name="code" placeholder="input Employee Code" required autofocus>
                     <span class="glyphicon glyphicon-user form-control-feedback"></span>
                 </div>
                 <div class="form-group has-feedback">

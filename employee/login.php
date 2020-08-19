@@ -3,14 +3,14 @@
 session_start();
 include 'includes/conn.php';
 if (isset($_POST['login'])) {
-    $username = $_POST['username'];
+    $code = $_POST['code'];
     $password = $_POST['password'];
 
-    $sql = "SELECT * FROM employees WHERE firstname = '$username'";
+    $sql = "SELECT * FROM employees WHERE employee_id = '$code'";
     $query = $conn->query($sql);
 
     if ($query->num_rows < 1) {
-        $_SESSION['error'] = 'Cannot find account with the username';
+        $_SESSION['error'] = 'Cannot find account with the code';
     } else {
         $row = $query->fetch_assoc();
         if (password_verify($password, $row['password'])) {
