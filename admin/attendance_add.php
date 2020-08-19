@@ -33,7 +33,7 @@
 				$scherow = $squery->fetch_assoc();
 				$logstatus = ($time_in > $scherow['time_in']) ? 0 : 1;
 				//
-				$sql = "INSERT INTO attendance (employee_id, date, time_in, time_out, status) VALUES ('$emp', '$date', '$time_in', '$time_out', '$logstatus')";
+				$sql = "INSERT INTO attendance (employee_id, date, time_in, time_out, status, num_hr) VALUES ('$emp', '$date', '$time_in', '$time_out', '$logstatus' , 8)";
 				if($conn->query($sql)){
 					$_SESSION['success'] = 'Attendance added successfully';
 					$id = $conn->insert_id;
