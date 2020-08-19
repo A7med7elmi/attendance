@@ -1,0 +1,1 @@
+ALTER TABLE  `schedules` add column `time_break_from` time,add column `time_break_to` time;
