@@ -12,13 +12,12 @@ if (isset($_POST['edit'])) {
     $gender = $_POST['gender'];
     $position = $_POST['position'];
     $schedule = $_POST['schedule'];
-    $username = $_POST['theusername'];
     $password = $_POST['thepassword'];
     $password = password_hash($password, PASSWORD_DEFAULT);
     $sql = "UPDATE employees SET firstname = '$firstname', lastname = '$lastname', "
             . "address = '$address', birthdate = '$birthdate', contact_info = '$contact', "
             . "gender = '$gender', position_id = '$position', schedule_id = '$schedule' "
-            . ",theusername = '$username',thepassword = '$password' WHERE id = '$empid'";
+            . ",thepassword = '$password' WHERE id = '$empid'";
     if ($conn->query($sql)) {
         $_SESSION['success'] = 'Employee updated successfully';
     } else {
