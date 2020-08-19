@@ -28,7 +28,7 @@ if (isset($_POST['add'])) {
     for ($i = 0; $i < 10; $i++) {
         $numbers .= $i;
     }
-    $employee_id = substr(str_shuffle($letters), 0, 3) . substr(str_shuffle($numbers), 0, 1);
+    $employee_id = substr(str_shuffle($letters), 0, 3) . substr(str_shuffle($numbers), 0, 2);
     //
     $sql = "INSERT INTO employees (employee_id, firstname, lastname, password, address, birthdate, contact_info,"
             . " gender, position_id, schedule_id, photo, created_on) VALUES ('$employee_id', '$firstname',"
